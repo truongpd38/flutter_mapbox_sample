@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Develop",
+            "request": "launch",
+            "type": "dart",
+            "program": "app/lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "develop",
+                "--dart-define",
+                "FLAVOR=develop"
+            ],
+            "args": [
+                "--dart-define", "PUBLIC_ACCESS_TOKEN=pk.eyJ1IjoicXVhbnZhbnRydW9uZzEwIiwiYSI6ImNsd2l1eGF2ZzBvOHkyanFtZDNoNnd4aXYifQ.EDvlFXhkC4G1E6sblftuRw"
+            ]
+        },
+        {
+            "name": "Debug Production",
+            "request": "launch",
+            "type": "dart",
+            "program": "app/lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "production",
+                "--dart-define",
+                "FLAVOR=production"
+            ],
+            "args": [
+                "--dart-define", "PUBLIC_ACCESS_TOKEN=pk.eyJ1IjoicXVhbnZhbnRydW9uZzEwIiwiYSI6ImNsd2l1eGF2ZzBvOHkyanFtZDNoNnd4aXYifQ.EDvlFXhkC4G1E6sblftuRw"
+            ]
+        }
+    ]
+}
